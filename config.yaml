@@ -1,0 +1,58 @@
+# Early Disease Diagnosis Analysis Configuration
+
+# System Settings
+system:
+  name: "Early Disease Diagnosis & Healthcare Outcomes Analysis"
+  version: "1.0.0"
+  log_level: INFO
+
+# Disease Categories
+diseases:
+  - "Breast Cancer"
+  - "Lung Cancer"
+  - "Colorectal Cancer"
+  - "Prostate Cancer"
+  - "Diabetes"
+  - "Heart Disease"
+  - "Cervical Cancer"
+  - "Ovarian Cancer"
+
+# Survival Analysis
+survival:
+  time_horizon_years: 5
+  confidence_interval: 0.95
+  
+# Cost Analysis
+cost:
+  currency: "USD"
+  discount_rate: 0.03
+  productivity_cost_per_day: 200
+
+# Screening Programs
+screening:
+  types:
+    - "Mammography"
+    - "Pap Smear"
+    - "Colonoscopy"
+    - "PSA Test"
+    - "Blood Glucose"
+    - "BP Screening"
+  recommended_age_ranges:
+    breast: "40-74"
+    cervical: "21-65"
+    colorectal: "50-75"
+    prostate: "50-70"
+
+# Barriers
+barriers:
+  categories:
+    - "Patient-Related"
+    - "Healthcare System"
+    - "Socioeconomic"
+    - "Cultural"
+    - "Awareness"
+
+# Output
+output:
+  reports_path: "output/reports/"
+  figures_path: "output/figures/"
